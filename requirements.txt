@@ -1,0 +1,11 @@
+pandas
+numpy
+matplotlib
+seaborn
+prophet
+networkx
+plotly
+scikit-learn
+requests
+ipywidgets
+kaleido
