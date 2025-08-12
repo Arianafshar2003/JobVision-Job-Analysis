@@ -1,3 +1,58 @@
+## 🚀 How to Run This Repository
+
+You can run the analysis in two main ways: **through the Python script** or **Jupyter Notebook**.
+
+---
+
+### 1️⃣ Run as a Python Script
+The non-interactive script is located in the `src/` folder.
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/Arianafshar2003/JobVision-Job-Analysis.git
+cd JobVision-Job-Analysis
+
+# 2. Install dependencies
+pip install -r requirements.txt
+
+# 3. Run the analysis
+cd src
+python jobvision_dataset_analysis.py
+
+This will:
+- Load the **JobVision Job Posts Dataset** from HuggingFace  
+- Clean, preprocess, and analyze the data  
+- Display interactive **Plotly** charts & **Matplotlib** plots  
+
+---
+
+### 2️⃣ Run as a Jupyter Notebook
+If you want an **interactive** environment:
+
+bash
+# 1. Install Jupyter if you don't have it
+pip install jupyter
+
+# 2. Start Jupyter
+jupyter notebook
+
+Then open:
+
+notebooks/jobvision_dataset_analysis.ipynb
+
+Run the cells in order to:
+- See step-by-step **data preparation**
+- Interactively explore charts
+- Modify code and re-run analyses
+
+---
+
+### 💡 Notes
+- The script and notebook download the dataset from HuggingFace:
+  ```python
+  df = pd.read_csv("hf://datasets/JobVision/JobVision_Jobposts_Dataset/JobVision_Jobposts_Dataset.csv")
+
+
 # JobVision-Job-Analysis
 # تحلیل جامع بازار کار ایران با داده‌های JobVision
 
